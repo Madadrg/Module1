@@ -1,7 +1,3 @@
-
-
-
-
 :root {
     --link-color: #fff;
     --heading-font-family:"Raleway", sans-serif;
@@ -119,6 +115,7 @@ padding: 12px 25px;
     display: flex;
     align-items: center;
     color: rgba(157, 164, 189, 0.6);
+    margin-bottom: 20px;
 }
 
 .heading-with-dash h3 {
@@ -129,6 +126,16 @@ padding: 12px 25px;
     font-weight: 600;
     line-height: 15px;
     letter-spacing: 0.1em;
+}
+
+.section {
+    padding: 130px 55px;
+}
+
+.centered-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .section-heading {
@@ -143,10 +150,11 @@ color: #fff;
 
 .prices {
     display: flex;
-    margin-top: 46px;
+    margin-top: 50px 0;
 }
 
 .prices-list {
+ padding: 30px 40px;
 font-family: var(--text-font-family);
 font-size: 18px;
 font-weight: 400;
@@ -155,15 +163,38 @@ letter-spacing: 0.02em;
 color: rgba(157, 164, 189, 1);
 list-style: none;
 flex-grow: 1;
+background-image: linear-gradient (rgba(23, 26, 36, 1), rgba(23, 26, 36, 0.2));
+}
+
+.prices-list:hover {
+    background-image: linear-gradient (rgba 9, 11, 19, 1, rgba 9, 11, 19, 1));
+    cursor: pointer;
+}
+
+.prices-list li:not(:last-child) {
+    margin-bottom: 20px;
 }
 
 .prices-list li .prices-dash {
-height: 1px;
-color: rgba(157, 164, 189, 0.12);
+    flex-grow: 1;
+    flex-shrink: 0;
+    flex-basis: auto;
+    height: 1px;
+    color: rgba(157, 164, 189, 0.12);
 }
 
-.prices-list li{
+.prices-list li .prices-dash {
+    margin-left: 6px;
+    margin-right: 6px;
+}
+
+.prices-list li {
 display: flex;
 justify-content: space-between;
-align-items: flex-end;
+align-items: baseline;
+margin-bottom: 20px;
+}
+
+element.style {
+    margin-left: 6px;
 }
